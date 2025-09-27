@@ -1,9 +1,6 @@
 package com.felipeMovio.joken.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Random;
 
@@ -11,6 +8,7 @@ import java.util.Random;
 @Setter
 @RequiredArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Game {
 
     private Player jogador;

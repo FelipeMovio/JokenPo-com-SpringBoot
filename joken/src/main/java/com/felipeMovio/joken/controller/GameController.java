@@ -16,19 +16,4 @@ public class GameController {
 
     private Game jogo;
 
-    @PostMapping("/jogar")
-    public ResultadoResponse jogar(@RequestBody JogadaRequest Request) {
-        if (jogo.isFinalizado()){
-            return new ResultadoResponse(
-                    "o jogo ja terminol",
-                    null,
-                    jogo.getVitoriasJogador(),
-                    jogo.getVitoriasComputador(),
-                    true,
-                    jogo.resultado()
-            );
-        }
-        jogo.setJogadaJogador(Request.getJogada());
-        jogo.jogadaComputador();
-    }
-}
+ 

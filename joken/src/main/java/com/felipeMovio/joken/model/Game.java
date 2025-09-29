@@ -6,13 +6,12 @@ import java.util.Random;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Game {
 
-    private Player jogador;
-    private Player computador;
+    private Player jogador = new Player("Jogador");
+    private Player computador = new Player("Computador");
     private Integer vitoriasJogador = 0;
     private Integer vitoriasComputador = 0;
     private boolean isFinalizado = false;

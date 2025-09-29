@@ -10,11 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(name = "/api/jokenpo")
-@RequiredArgsConstructor
+@RequestMapping("/api/jokenpo")
 public class GameController {
 
-    private Game jogo;
+    private Game jogo = new Game();
 
     @PostMapping("/jogar")
     public ResultadoResponse jogar(@RequestBody JogadaRequest Request) {

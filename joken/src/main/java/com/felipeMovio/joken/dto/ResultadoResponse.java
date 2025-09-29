@@ -5,9 +5,6 @@ import lombok.*;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
-@NoArgsConstructor
-@AllArgsConstructor
 public class ResultadoResponse {
     private String resultadoRodada;
 
@@ -21,4 +18,12 @@ public class ResultadoResponse {
     private String resultadoFinal;
 
 
+    public ResultadoResponse(String resultadoRodada, Jogada jogadaComputador, Integer vitoriasJogador, Integer vitoriasComputador, boolean isFinalizado, String resultadoFinal) {
+        this.resultadoRodada = resultadoRodada;
+        this.jogadaComputador = jogadaComputador;
+        this.vitoriasJogador = vitoriasJogador;
+        this.vitoriasComputador = vitoriasComputador;
+        this.isFinalizado = isFinalizado;
+        this.resultadoFinal = resultadoFinal;
+    }
 }

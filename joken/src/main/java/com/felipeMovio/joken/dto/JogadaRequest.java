@@ -5,7 +5,6 @@ import lombok.*;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
 @NoArgsConstructor
 @AllArgsConstructor
 public class JogadaRequest {
